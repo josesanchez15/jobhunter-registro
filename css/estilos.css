@@ -1,0 +1,48 @@
+body{
+	background: #21341c;
+	font-size: 1em;
+	font-family: arial;
+}
+div#logo{
+	width:100%;
+}
+img{
+	width:25%;
+	height:auto;
+	margin:auto;
+	display:block;
+}
+
+header{
+	margin: 0;
+	background: #2E2EFE;	
+	color:#FE2E2E;
+	text-align: center; ;
+	position: 1em 0;
+	border-bottom: 5px solid #aecd66;
+
+}
+
+.body{
+	width:100%;
+}
+div#registro{
+	background:#FFFFFF;
+	width:65%;
+	height:50%;
+	margin:auto;
+	display:block;
+}
+
+.footer{
+	width:100%
+}
+
+footer{
+	border-top: 3px solid #aecd66;
+	background: #294f1b;
+	color:#ffffff;
+	text-align: center;
+	font-size: 0.7em;
+	padding: 1em 0;
+}
