@@ -1,8 +1,9 @@
 <?php
- // $mysqli = new mysqli('ipaddress', 'root', '', 'BD's name');
+require 'connection.php';
+  //echo "Se realizo exitozamente la conexion a la base de datos";
 ?>
 <html lang="en">
-    <meta charset="UFT-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
@@ -31,25 +32,25 @@
                      </div>
             </section>
             <section>
-                <div class="full-register">
-                    <div class="full-register-content">
-                         <div class="content-register">    
+                <div class="full-signup">
+                    <div class="full-signup-content">
+                         <div class="content-signup">    
                             <form action="action.php" method="POST">
                             <fieldset>
                                 <legend>Cumplete la siguiente informacion</legend>
                                 <br><br>
                                 <label for="name">Registre su Nombre Completo *</label>
-                                <input type="text" id="name" name="Nombre" required><br><br>
+                                <input type="text" id="Nombre" name="name" required><br><br>
 
                                 <label for="email">Registre su Correo electronico *</label>
-                                <input type="text" id="email" name="Correo" required><br><br>
+                                <input type="email" id="Correo" name="email" required><br><br>
 
                                 <label for="password">Registre su Contraseña *</label>
-                                <input type="text" id="password" name="Contraseña" required><br><br>
+                                <input type="text" id="Contraseña" name="password" required><br><br>
 
                                 <label for="phone">Registre su Telefono / Celular *</label>
-                                <input type="text" id="phone" name="Celular" required><br><br>
-
+                                <input type="text" id="Celular" name="phone" required><br><br>
+                                
                                 <form>
                                     <label for="profile">Seleccione el Perfil *</label>
                                     <select name="profile">
@@ -58,6 +59,12 @@
                                         <option value="profesional">PORFESIONAL</option>
                                     </select>
                                 </form><br><br>
+
+                                <label for="profession">Registre su Profesion </label>
+                                <input type="text" id="Profesion" name="profession" ><br><br>
+
+                                <label for="description">Realise una brebe Descripcion Profesional </label>
+                                <input type="text" id="Discripcion" name="description" ><br><br>
                                 <button type="submit" onclick="proceso();">Guardar </button>
                             </fieldset>
                          </div>
